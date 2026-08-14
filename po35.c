@@ -5,13 +5,14 @@ int main(){
   int arr[20];
   printf("Enter a number\n");
   scanf("%d",&n);
-  int p=0;
+  int p=1;
 while (p<=n){
-   int c=0;  
-   while(p!=0){
+   int c=0; 
+   int temp=p;
+   while(temp!=0){
      c+=1;
-    arr[c+1]=p%10;
-     p/=10;
+    arr[c+1]=temp%10;
+     temp/=10;
      } 
    int k;
    for(int i=0;i<=c;i++){
