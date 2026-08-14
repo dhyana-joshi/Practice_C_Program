@@ -5,19 +5,19 @@ int main(){
   int arr[20];
   printf("Enter a number\n");
   scanf("%d",&n);
-  int count=0;
+  int c=0;
   while(n!=0){
     c+=1;
    arr[c+1]=n%10;
     n/=10;
     } 
   int k;
-  for(int i=0,i<=c,i++){
+  for(int i=0;i<=c;i++){
     k+=pow(arr[i],c);
     }
   if(k==n)
     printf("Given number is an armstrong number");
   else
     printf("Given number is not an armstrong number");
-  return 0
+  return 0;
 }
