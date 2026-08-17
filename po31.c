@@ -4,11 +4,9 @@ int main(){
   int n;
   printf("Enter a number: ");
   scanf("%d", &n);
-  int c=1;
-  while(n!=0){
-    c *= n;
+  while(n>0){
+    printf("%d\n", n);
     n--;
   }
-  printf("The factorial of %d is %d\n", n, c);
   return 0;
 }

@@ -4,11 +4,13 @@ int main(){
   int n;
   printf("Enter a number: ");
   scanf("%d", &n);
-  int c=1;
-  while(n!=0){
-    c *= n;
-    n--;
-  }
-  printf("The factorial of %d is %d\n", n, c);
+  int i=0;
+  while(i<=n){
+    while(i!=0){
+      int c=0;
+      i/=10;
+      c++;
+    }
+    if 
   return 0;
 }
